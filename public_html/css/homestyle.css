@@ -1,0 +1,10 @@
+.navbar .navbar-expand-lg{
+    background-color: rgb(223, 22, 22);
+}
+.container-fluid{
+    height: 200px;
+}
+.btn .btn-orange .btn-lg{
+    background-color: orangered;
+    vertical-align: text-top;
+}
