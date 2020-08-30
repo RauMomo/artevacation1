@@ -24,6 +24,9 @@ Route::get('about', function () {
 Route::get('article/1', function () {
     return view('article');
 });
+Route::redirect('/1', '/article/1');
+Route::redirect('/2', '/article/2');
+Route::redirect('/3', '/article/3');
 Route::get('article/2', function () {
     return view('article2');
 });
@@ -48,4 +51,5 @@ Route::post('/user/checkLogin', 'UserController@checkLogin');
 Route::get('/user/successLogin', 'UserController@successLogin');
 Route::post('/user/register', 'UserController@register');
 Route::get('/user/logout', 'UserController@logout');
+Route::get('/search', 'SearchController@search');
 

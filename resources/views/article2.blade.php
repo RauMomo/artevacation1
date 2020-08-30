@@ -1,4 +1,4 @@
-@extends('layout');
+@extends('layout')
 
 <!doctype html>
 <html lang="en">
@@ -115,6 +115,14 @@
       border: transparent;
       width: 35% !important;
     }
+    .read-more{
+        text-decoration: none;
+        color: black;
+    }
+    .read-more:hover{
+        text-decoration: none;
+        color: black;
+    }
   </style>
   </head>
   <body>
@@ -132,9 +140,16 @@
       <img src="masjid_al_barkah2.png" class="img-fluid" id="image-full">
     </div>
     <div class="row pt-3 pb-5">
-      <p class="pt-3">
+      <p class="col-md-8 pt-3">
         Masjid Agung Al-Barkah Bekasi adalah sebuah masjid yang ada di Bekasi. Masjid ini merupakan salah satu masjid tua di Indonesia. Masjid agung yang dibangun tahun 1890 dipelopori H. Abd. Hamid (Alm) penghulu Lanraad saat itu, diatas tanah wakaf Bapak Bachroem (Alm) seluas 3370m² terletak di Alun-Alun Kota Bekasi (sekarang bernama Jalan Veteran). Masjid ini telah mengalami beberapa kali renovasi. Pada tahun 1969 direnovasi total menjadi masjid oleh Bupati Bapak MS. subandi (Alm). Renovasi pertama ketika kota Bekasi menjadi tuan rumah MTQ Jawa Barat 1988, kemudian tahun 1997 lalu direnovasi lagi pada 2002. Sampai kemudian menjadi bentuknya yang semegah dan semewah sekarang ini setelah melalui renovasi total tahun 2004-2008 yang diprakarsai oleh Walikota Bekasi H. Achmad Zurfaih (Alm)
       </p>
+      <div class="col-md-4 pt-3">
+        <h3 class="h5 text-left pb-2">Lihat artikel lainnya</h3>
+        <hr style="border: 1.5px solid black">
+        <h6 class="text-left pt-2"><a class="read-more" href="/1">Sejarah dari Monumen Nasional</a>
+        <hr style="border: 1.5px solid black">
+        <h6 class="text-left pt-2"><a class="read-more" href="/3">Sejarah dari Museum Fatahillah</a>
+      </div>
       <article class="pt-3">
         <h3>Lokasi</h3>
         <p class="pt-3">Masjid Agung Al-Barkah kota Bekasi berada di Jalan Veteran, Kawasan Alun alun, Pusat pemerintahan kota Bekasi, Provinsi Jawa Barat. Lokasi masjid ini berseberangan dengan Rumah Sakit Daerah kota Bekasi.</p>
@@ -155,6 +170,10 @@
           <p class="pt-3">Delapan daun pintu dari kayu jati berukir kaligrafi mencerminkan 8 pintu menuju surga. Daun pintu tersebut terbuat dari kayu jati yang dipesan langsung dari Jepara, Panitia pembangunan Masjid bahkan datang langsung ke Jepara untuk memilih kayu yang benar benar bagus dari pohon yang sudah berusia di atas 90 tahun. Kubah masjid memiliki diameter 18 meter dan di bawahnya bertuliskan 99 nama Allah (Asmu’ul Husna)</p>
           <p class="pt-3">Tiang tiang masjid dilapisi kayu untuk memberi kesan hangat. Ini diadopsi dari Masjid Agung Demak yang dibuat dari kayu. Juga terdapat elemen floral dan ornamen Islam seperti bintang atau bentuk segi delapan yang umum banyak dipakai pada bangunan masjid. Masjid Agung Al-Barkah kota Bekasi dilengkapi tempat Thaharah, gedung pertemuan dan tempat majelis taklim, perpustakaan, kantor ta’mir dan kantor remaja masjid, taman, plaza dan area parkir.</p>
           <p class="pt-3">Arsitektur masjid tidak lepas dari simbolisasi Islam, setiap detail bangunan memiliki arti. Simbolisasi islam bisa kita jumpai pada 4 buah menara yang memiliki arti 4 tiang ilmu, yakni Bahasa Arab, Syariah, sejarah dan filsafat. Serta syarat hidup bahagia yakni akidah, akhlak, syariah dan ibadah. Tiga bagian bentuk dasar bangunan menara mencerminkan iman islam dan ihsan, sedangkan ketinggian menara 35 meter diambil dari salah satu surat Al-qur’an.</p>
+      </article>
+      <article class="pt-3">
+          <h3>Lokasi</h3>
+          <div class="mx-auto"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.173704350773!2d106.99741071476923!3d-6.240823695482549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c25c75b3bd7%3A0xe9b2f8bf3e05cc0f!2sMasjid%20Al%20-%20Barkah%2C%20Jl.%20Veteran%20No.46%2C%20RT.002%2FRW.004%2C%20Marga%20Jaya%2C%20Kec.%20Bekasi%20Sel.%2C%20Kota%20Bks%2C%20Jawa%20Barat%2017141!5e0!3m2!1sen!2sid!4v1597118282102!5m2!1sen!2sid" height="300" width="400" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
       </article>
     </div>
   </div>

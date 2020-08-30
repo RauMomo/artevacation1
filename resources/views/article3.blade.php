@@ -1,4 +1,4 @@
-@extends('layout');
+@extends('layout')
 
 <!doctype html>
 <html lang="en">
@@ -115,6 +115,14 @@
       border: transparent;
       width: 35% !important;
     }
+    .read-more{
+        text-decoration: none;
+        color: black;
+    }
+    .read-more:hover{
+        text-decoration: none;
+        color: black;
+    }
   </style>
   </head>
   <body>
@@ -132,9 +140,16 @@
       <img src="museum_fatahillah2.jpg" class="img-fluid" id="image-full">
     </div>
     <div class="row pt-3 pb-5">
-      <p class="pt-3">
+      <p class="col-md-8 pt-3">
         Museum Fatahillah memiliki nama resmi. Museum Sejarah Jakarta adalah sebuah museum yang terletak di Jalan Taman Fatahillah No. 1, Jakarta Barat dengan luas lebih dari 1.300 meter persegi. Bangunan ini dahulu merupakan balai kota Batavia (bahasa Belanda: Stadhuis van Batavia) yang dibangun pada tahun 1707-1712 atas perintah Gubernur-Jendral Joan van Hoorn. Bangunan ini menyerupai Istana Dam di Amsterdam, terdiri atas bangunan utama dengan dua sayap di bagian timur dan barat serta bangunan sanding yang digunakan sebagai kantor, ruang pengadilan, dan ruang-ruang bawah tanah yang dipakai sebagai penjara. Pada tanggal 30 Maret 1974, bangunan ini kemudian diresmikan sebagai Museum Fatahillah.
       </p>
+      <div class="col-md-4 pt-3">
+        <h3 class="h5 text-left pb-2">Lihat artikel lainnya</h3>
+        <hr style="border: 1.5px solid black">
+        <h6 class="text-left pt-2"><a class="read-more" href="/2">Sejarah dari Masjid Al-Barkah</a>
+        <hr style="border: 1.5px solid black">
+        <h6 class="text-left pt-2"><a class="read-more" href="/1">Sejarah dari Monumen Nasional</a>
+      </div>
       <article class="pt-3">
         <h3>Sejarah</h3>
         <p class="pt-3">Stadhuis di awal abad ke-20, dihubungkan dengan jalur trem ke pusat pemerintahan di kawasan Weltevreden. Pada awal mulanya, balai kota pertama di Batavia dibangun pada tahun 1620 di tepi timur Kali Besar. Bangunan ini hanya bertahan selama enam tahun sebelum akhirnya dibongkar demi menghadapi serangan dari pasukan Sultan Agung pada tahun 1626.[1] Sebagai gantinya, dibangunlah kembali balai kota tersebut atas perintah Gubernur-Jenderal Jan Pieterszoon Coen pada tahun 1627. Lokasinya berada di daerah Nieuwe Markt (sekarang Taman Fatahillah).[2] Menurut catatan sejarah, balai kota kedua ini hanya bertingkat satu dan pembangunan tingkat kedua dilakukan kemudian. Tahun 1648 kondisi balai kota sangat buruk. Tanah di kota Batavia yang sangat labil dan beratnya bangunan ini menyebabkan perlahan-lahan turun dari permukaan tanah.</p>
@@ -146,6 +161,10 @@
         <p class="pt-3">Pada masa kemerdekaan museum ini berubah menjadi Museum Djakarta Lama di bawah naungan LKI (Lembaga Kebudayaan Indonesia) dan selanjutnya pada tahun 1968 ‘’Museum Djakarta Lama'’ diserahkan kepada PEMDA DKI Jakarta. Gubernur DKI Jakarta pada saat itu, Ali Sadikin, kemudian meresmikan gedung ini menjadi Museum Sejarah Jakarta pada tanggal 30 Maret 1974.</p>
         <p class="pt-3">Untuk meningkatkan kinerja dan penampilannya, Museum Sejarah Jakarta sejak tahun 1999 bertekad menjadikan museum ini bukan sekadar tempat untuk merawat, memamerkan benda yang berasal dari periode Batavia, tetapi juga harus bisa menjadi tempat bagi semua orang baik bangsa Indonesia maupun asing, anak-anak, orang dewasa bahkan bagi penyandang cacat untuk menambah pengetahuan dan pengalaman serta dapat dinikmati sebagai tempat rekreasi. Untuk itu Museum Sejarah Jakarta berusaha menyediakan informasi mengenai perjalanan panjang sejarah kota Jakarta, sejak masa prasejarah hingga masa kini dalam bentuk yang lebih rekreatif. Selain itu, melalui tata pamernya Museum Sejarah Jakarta berusaha menggambarkan “Jakarta Sebagai Pusat Pertemuan Budaya” dari berbagai kelompok suku baik dari dalam maupun dari luar Indonesia dan sejarah kota Jakarta seutuhnya. Museum Sejarah Jakarta juga selalu berusaha menyelenggarakan kegiatan yang rekreatif sehingga dapat merangsang pengunjung untuk tertarik kepada Jakarta dan meningkatkan kesadaran akan pentingnya warisan budaya.</p>
       </article>
+      <article class="pt-3">
+        <h3>Lokasi</h3>
+        <div class="mx-auto"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9665660427345!2d106.81111131430941!3d-6.135194661856952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1dff4292a57d%3A0x12f0032d678c0745!2sJakarta%20History%20Museum!5e0!3m2!1sen!2sid!4v1597120084435!5m2!1sen!2sid" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+    </article>
     </div>
   </div>
   @endsection

@@ -1,4 +1,4 @@
-@extends('layout');
+@extends('layout')
 
 <!doctype html>
 <html lang="en">

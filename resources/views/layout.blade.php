@@ -16,6 +16,9 @@
       height: 100%;
       width: 100%;
     }
+    html{
+      min-height: 100%;
+    }
     .loginButton{
       background-color: orangered !important;
       border: none;
@@ -25,8 +28,11 @@
       text-decoration: none;
       display: inline-block;
     }
+    .searchButton{
+      background-color: 
+    }
     #headerImage{
-      background: url('images.jpg') no-repeat center center fixed;
+      background: url('new_header_web.jpeg') no-repeat center center fixed;
       background-size: cover;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -64,18 +70,34 @@
       padding-left: 10%;
       padding-right: 10%;
     }
+    #connect-title{
+      text-decoration: none;
+      position: relative;
+    }
+    #connect-title:after{
+      content: '';
+      width: 30%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      bottom: -20px;
+      border-width: 0 0 2px;
+      border-style: solid;
+    }
     #business-partner-title, #pelajari-lebih-title{
       text-decoration: none;
       position: relative;
     }
     #business-partner-title:after, #pelajari-lebih-title:after{
+      text-align: center;
       content: '';
       width: 50%;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      bottom: -20px;
+      bottom: -10px;
       border-width: 0 0 2px;
       border-style: solid;
     }
@@ -113,20 +135,32 @@
     }
     figcaption{
       margin: 0 !important;
+      color: white;
     }
     footer{
-      background-color: #ffcc7d;
+        background-color: #ffcc7d;
+        color: white;
+        width: 100%;
     }
     .fa{
         font-size: 40px;
         color: #f23934;
         letter-spacing: 10px;
     }
+    #nav{
+        background-image: url('ARTEVACATION_white.png') !important;
+        background-size: cover;
+        color: transparent;
+    }
+    .btn{
+        background-color:#ffcc7d;
+        width: 50px;
+    }
   </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="navbar-bg">
-        <a class="navbar-brand" href="/home">Artevacation</a>
+        <a class="navbar-brand" id="nav" href="/home">Artevacation</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -145,6 +179,12 @@
                 <a class="nav-link" href="/about">About Us</a>
             </li>
             </ul>
+            <form class="form-inline mr-5" type="get" action="{{ url('/search') }}">
+              <div class="md-form my-0">
+                <button class="btn"><i class="fa fa-search text-white" aria-hidden="true" type="submit" style="font-size: 20px"></i></button>
+                <input class="form-control" type="search" name="query" placeholder="Search" aria-label="Search">
+              </div>
+            </form>
             @if(Auth::check()){
               <button type="button" class="loginButton" onclick="window.location='{{ url("user/logout")}}'">
                 Logout
@@ -166,13 +206,15 @@
                 <div id="footerImage">
                   <img src="ARTEVACATION_black.png">
                 </div>
-                <figcaption class="figure-caption text-center mt-3">Copyright ©2020 Artevacation All Rights Reserved</figcaption>
+                <figcaption class="text-center mt-3">Copyright ©2020 Artevacation All Rights Reserved</figcaption>
               </div>
             <div class="col-xs-12 col-sm-6 col-md-6">
-              <h5 text-center>Connect with us:</h5>
-              <a href="https://instagram.com/artevacation.co?igshid=1gzcjck69nr29"><i class="fa fa-instagram"></i></a>
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
+              <div class="h5 text-center" id="connect-title">Connect with us:</div>
+              <div class="text-center py-2">
+                <a href="https://instagram.com/artevacation.co?igshid=1gzcjck69nr29"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </div>
             </div>
           </div>
           </div>

@@ -1,4 +1,4 @@
-@extends('layout');
+@extends('layout')
 <!doctype html>
 <html lang="en">
   <head>
@@ -37,11 +37,13 @@
     }
     #headerImageWrapper{
       padding-top: 56.25%;
-      background: url('highlight.jpg') no-repeat center center fixed;
+      background: url('new_header_web.jpeg') no-repeat center center fixed;
+      background-attachment: scroll;
       background-size: cover;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
+      max-height: 200px !important;
     }
     #highlight{
       vertical-align: text-top;
@@ -88,8 +90,15 @@
       border-width: 0 0 2px;
       border-style: solid;
     }
+    #pelajari-lebih-section{
+      background-color: #e9ecef;
+    }
     #business-partner-section{
       background-color: #e9ecef;
+    }
+    #business-partner{
+      background-color: #FFCB7C;
+      color: white;
     }
     .row{
       display: flex;
@@ -134,113 +143,57 @@
     footer{
       background-color: #ffcc7d;
     }
+    #jumbotron-container{
+      position: absolute;
+      padding: 2em;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .card{
+      background: rgba(248, 131, 121, .8) !important;
+    }
+    .form-control{
+      width: 100%;
+    }
+    .call-to-action{
+      text-decoration: none;
+      color: white;
+    }
+    .call-to-action:hover{
+      text-decoration: none;
+      color: white;
+    }
   </style>
   </head> 
-  <div class="jumbotron-fluid">
-    <div id="headerImageWrapper"></div>
+  <div class="jumbotron-fluid" id="headerImageWrapper">
+      <!--<div class="container justify-content-center" id="jumbotron-container">
+        <div class="card">
+          <div class="card-body px-5">
+            <h4 class="display-6">Find anything:</h4>
+            <div class="row py-2">
+            <div class="d-inline-block col-md-2">
+              <button class="btn btn-secondary dropdown-toggle px-5" type="button" id="dropdown_coins" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+                Coin
+              </button>
+            </div>
+            <div class="d-inline-block col-md-10">
+              <input class="form-control" placeholder="Enter something">
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
   </div>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="navbar-bg">
-        <a class="navbar-brand" href="#">Artevacation</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/partner">Business Partner</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/blog">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about">About Us</a>
-            </li>
-            </ul>
-            <button type="button" onclick="location.href='login'" class="loginButton">
-              Login
-            </button>
-        </div>
-    </nav>
   @section('container')
   <div class="jumbotron mt-0 mb-0 pb-0">
     <div class="container">
       <img src="ARTEVACATION_black.png" alt="Artevacation Logo">
       <div class="container" id="jumbotron-text">
         <p class="text-center">Artevacation adalah Web/Aplikasi yang memudahkan masyarakat untuk lebih mengenal pengetahuan sejarah, tempat wisata & sejarah, game bercerita sejarah dan juga pusat belanja artefak tanpa melupakan unsur sejarah yang ada di Indonesia</p>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid" id="business-partner-section">
-    <div class="container">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        <div class="h3 text-center py-5" id="business-partner-title">
-          Our Business Partner
-        </div>
-      </div>
-    </div>
-    <div class="row align-items-center">
-      <div class="col px-2">
-        <div class="px-2 py-5">
-          <img src="ARTEVACATION_black.png" alt="img1">
-        </div>
-      </div>
-      <div class="col px-2">
-        <div class="px-2 py-5">
-          <img src="ARTEVACATION_black.png" alt="img2">
-        </div>
-      </div>
-      <div class="col px-2">
-        <div class="px-2 py-5">
-          <img src="ARTEVACATION_black.png" alt="img3">
-        </div>
-      </div>
-    </div>
-    <div class="row align-items-center">
-      <div class="col px-2">
-        <div class="px-2 py-5">
-          <img src="ARTEVACATION_black.png" alt="img4">
-        </div>
-      </div>
-      <div class="col px-2">
-        <div class="px-2 py-5">
-          <img src="ARTEVACATION_black.png" alt="img5">
-        </div>
-      </div>
-      <div class="col px-2">
-        <div class="px-2 py-5">
-          <img src="ARTEVACATION_black.png" alt="img6">
-        </div>
-      </div>
-    </div>
-    <div class="row align-items-center">
-      <div class="col-xs-12 col-sm-6 col-md-4 px-2">
-        <div class="px-2 py-5">
-          <img src="ARTEVACATION_black.png" alt="img7">
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 px-2">
-        <div class="px-2 py-5">
-          <img src="ARTEVACATION_black.png" alt="img8">
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 px-2">
-        <div class="px-2 py-5">
-          <img src="ARTEVACATION_black.png" alt="img9">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col text-center">
-        <div class="py-5">
-          <button class="joinPartnershipBtn">Join Our Business Partner</button>
-          </div>
       </div>
     </div>
   </div>
@@ -307,6 +260,78 @@
         </div>
       </div>
     </div>
+    </div>
+  </div>
+  <div class="container-fluid" id="business-partner-section">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="h3 text-center py-5" id="business-partner-title">
+          Partner Bisnis Kami
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col px-2">
+        <div class="px-2 py-5">
+          <img src="ARTEVACATION_black.png" alt="img1">
+        </div>
+      </div>
+      <div class="col px-2">
+        <div class="px-2 py-5">
+          <img src="ARTEVACATION_black.png" alt="img2">
+        </div>
+      </div>
+      <div class="col px-2">
+        <div class="px-2 py-5">
+          <img src="ARTEVACATION_black.png" alt="img3">
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col px-2">
+        <div class="px-2 py-5">
+          <img src="ARTEVACATION_black.png" alt="img4">
+        </div>
+      </div>
+      <div class="col px-2">
+        <div class="px-2 py-5">
+          <img src="ARTEVACATION_black.png" alt="img5">
+        </div>
+      </div>
+      <div class="col px-2">
+        <div class="px-2 py-5">
+          <img src="ARTEVACATION_black.png" alt="img6">
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-xs-12 col-sm-6 col-md-4 px-2">
+        <div class="px-2 py-5">
+          <img src="ARTEVACATION_black.png" alt="img7">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 px-2">
+        <div class="px-2 py-5">
+          <img src="ARTEVACATION_black.png" alt="img8">
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 px-2">
+        <div class="px-2 py-5">
+          <img src="ARTEVACATION_black.png" alt="img9">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mt-3 mb-5" id="business-partner">
+    <div class="row">
+      <div class="col text-center">
+        <div class="py-5">
+          <div class="h3">Ingin bergabung dengan Artevacation?</div>
+          <p>Segera daftarkan tempat anda di artevacation dan rasakan manfaatnya untuk tempat anda!</p>
+          <button class="joinPartnershipBtn my-3"><a class="call-to-action" href="/partner">Daftarkan Tempat Anda</a></button>
+        </div>
+      </div>
     </div>
   </div>
   @endsection

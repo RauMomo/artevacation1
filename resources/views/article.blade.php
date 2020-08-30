@@ -1,4 +1,4 @@
-@extends('layout');
+@extends('layout')
 
 <!doctype html>
 <html lang="en">
@@ -115,6 +115,14 @@
       border: transparent;
       width: 35% !important;
     }
+    .read-more{
+        text-decoration: none;
+        color: black;
+    }
+    .read-more:hover{
+        text-decoration: none;
+        color: black;
+    }
   </style>
   </head>
   <body>
@@ -132,9 +140,16 @@
       <img src="u146.svg" class="img-fluid" id="image-full">
     </div>
     <div class="row pt-3 pb-5">
-      <p class="pt-3">
+      <p class="col-md-8 pt-3">
         Monumen Nasional atau yang populer disingkat dengan Monas atau Tugu Monas adalah monumen peringatan setinggi 132 meter (433 kaki) yang didirikan untuk mengenang perlawanan dan perjuangan rakyat Indonesia untuk merebut kemerdekaan dari pemerintahan kolonial Hindia Belanda. Pembangunan monumen ini dimulai pada tanggal 17 Agustus 1961 di bawah perintah presiden Sukarno dan dibuka untuk umum pada tanggal 12 Juli 1975. Tugu ini dimahkotai lidah api yang dilapisi lembaran emas yang melambangkan semangat perjuangan yang menyala-nyala. Monumen Nasional terletak tepat di tengah Lapangan Medan Merdeka, Jakarta Pusat.
       </p>
+      <div class="col-md-4 pt-3">
+        <h3 class="h5 text-left pb-2">Lihat artikel lainnya</h3>
+        <hr style="border: 1.5px solid black">
+        <h6 class="text-left pt-2"><a class="read-more" href="/2">Sejarah dari Masjid Al-Barkah</a>
+        <hr style="border: 1.5px solid black">
+        <h6 class="text-left pt-2"><a class="read-more" href="/3">Sejarah dari Museum Fatahillah</a>
+      </div>
       <article class="pt-3">
         <h3>Sejarah</h3>
         <p class="pt-3">Setelah pusat pemerintahan Republik Indonesia kembali ke Jakarta setelah sebelumnya berkedudukan di Yogyakarta pada tahun 1950, menyusul pengakuan kedaulatan Republik Indonesia oleh pemerintah Belanda pada tahun 1949, Presiden Sukarno mulai merencanakan pembangunan sebuah Monumen Nasional yang setara dengan Menara Eiffel di lapangan tepat di depan Istana Merdeka. Pembangunan Tugu Monas bertujuan mengenang dan melestarikan perjuangan bangsa Indonesia pada masa revolusi kemerdekaan 1945, agar terus membangkitkan inspirasi dan semangat patriotisme generasi penerus bangsa.</p>
@@ -159,6 +174,10 @@
           <p class="pt-3">Relief timbul sejarah Indonesia menampilkan Gajah Mada dan sejarah Majapahit Pada tiap sudut halaman luar yang mengelilingi monumen terdapat relief yang menggambarkan sejarah Indonesia. Relief ini bermula di sudut timur laut dengan mengabadikan kejayaan Nusantara pada masa lampau; menampilkan sejarah Singhasari dan Majapahit. Relief ini berlanjut secara kronologis searah jarum jam menuju sudut tenggara, barat daya, dan barat laut.</p>
           <p class="pt-3">Secara kronologis menggambarkan masa penjajahan Belanda, perlawanan rakyat Indonesia dan pahlawan-pahlawan nasional Indonesia, terbentuknya organisasi modern yang memperjuangkan Indonesia Merdeka pada awal abad ke-20, Sumpah Pemuda, Pendudukan Jepang dan Perang Dunia II, proklamasi kemerdekaan Indonesia disusul Revolusi dan Perang kemerdekaan Republik Indonesia, hingga mencapai masa pembangunan Indonesia modern. Relief dan patung-patung ini dibuat dari semen dengan kerangka pipa atau logam, namun beberapa patung dan arca tampak tak terawat dan rusak akibat hujan serta cuaca tropis.</p>
       </article>
+      <article class="pt-3">
+        <h3>Lokasi</h3>
+        <div class="mx-auto"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666466960686!2d106.82496411430981!3d-6.175387062231808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sNational%20Monument!5e0!3m2!1sen!2sid!4v1597119975159!5m2!1sen!2sid" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+    </article>
     </div>
   </div>
   @endsection
